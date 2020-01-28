@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.prescriptionhub"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    //Lottie
+    implementation('com.airbnb.android:lottie:2.7.0') {
+        exclude group: 'com.android.support', module: 'support-v7'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview'
+        exclude group: 'com.android.support', module: 'transition'
+    }
+
+    //Butter Knife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    //Material text
+    implementation 'com.github.florent37:materialtextfield:1.0.7'
+
+    // Image Picker
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:2.2.0'
+    // for experimental rx picker
+    implementation 'com.github.esafirm.android-image-picker:rximagepicker:2.2.0'
+    // If you have a problem with Glide, please use the same Glide version or simply open an issue
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+
+    //AppCrash
+    implementation 'cat.ereza:customactivityoncrash:2.2.0'
+
+    //Spot Dialog
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+
+    //Material Calender View
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+    //Fresco
+    implementation 'com.facebook.fresco:fresco:2.0.0'
+
+    // Material Dialog Library
+    implementation 'com.shreyaspatil:MaterialDialog:2.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

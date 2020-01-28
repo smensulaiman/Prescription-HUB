@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1098591278833",
+    "firebase_url": "https://prescription-hub.firebaseio.com",
+    "project_id": "prescription-hub",
+    "storage_bucket": "prescription-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098591278833:android:4e048fcbef26c5c0927b50",
+        "android_client_info": {
+          "package_name": "com.example.prescriptionhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098591278833-u6f0ib8sct6sesc9cg9q4drmtc2rgod4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxh5JtO8STk2gAHT6h2QSEG1S6x_xVYjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098591278833-u6f0ib8sct6sesc9cg9q4drmtc2rgod4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
